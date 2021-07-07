@@ -135,7 +135,7 @@ main {
 .card__title {
     margin: 8px 0 20px;
     font-weight: 400;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
 
@@ -169,7 +169,7 @@ main {
 
 .product-price {
     margin-bottom: 5px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .btn__icon {
