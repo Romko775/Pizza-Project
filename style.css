@@ -247,11 +247,15 @@ main {
         row-gap: 20px;
     }
 
+    .card__photo{
+        margin: 0 auto;
+    }
+
 }
 
 @media screen and (max-width: 750px){
     .card{
-        width: 100%;
+        width: 90%;
     }
 
     .page-header, .nav{
