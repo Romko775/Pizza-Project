@@ -22,9 +22,8 @@ body {
 
 }
 
-main {
-    flex-grow: 1;
-}
+
+
 
 
 /* =========================================
@@ -73,6 +72,7 @@ main {
 }
 
 .logo {
+    width: fit-content;
     display: inline-flex;
     align-items: center;
     padding: 10px;
@@ -415,6 +415,13 @@ main {
         font-size: 12px;
         margin-bottom: 15px;
     }
+
+    .container-img{
+        max-width: 333px;
+    }
+
+
+   
 }
 
 @media screen and (max-width: 400px) {
