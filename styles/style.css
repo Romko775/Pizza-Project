@@ -88,19 +88,29 @@ main {
     margin-left: 10px;
     width: 30px;
     height: 30px;
-    background-image: url(photos/pizza.svg);
+    background-image: url(../photos/pizza.svg);
     background-size: 30px;
 }
 
 .page-footer {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 40px;
     padding: 20px;
     background-color: #3c3c3c;
+    color: #fff;
 }
 
+.page-footer span{
+    display: block;;
+}
 
+.page-footer h4{
+    text-align: center;
+    margin-bottom: 10px;
+}
 
 
 .header__scrolled {
@@ -114,7 +124,7 @@ main {
 /* Hero */
 
 .hero{
-    background: url(photos/wooden-board-empty-table-top-blurred-background.jpg) center / cover no-repeat ; 
+    background: url(../photos/wooden-board-empty-table-top-blurred-background.jpg) center / cover no-repeat ; 
     height: 100vh;
     position: relative;
     text-align: center;
@@ -190,7 +200,7 @@ main {
     margin-top: 90px;
     height: 300px;
     width: 100%;
-    background: url(photos/3007281.png) center / cover no-repeat;
+    background: url(../photos/3007281.png) center / cover no-repeat;
 }
 
 .menu{
@@ -307,6 +317,70 @@ main {
     background-color: rgba(255, 60, 0, 0.884);
 }
 
+
+/* About-us Section */
+
+.about-us{
+    background: linear-gradient(to right, #2c2c2c, #2a2a2a) center / cover no-repeat;
+    width: 100%;
+    height: 300px;
+
+
+    margin: 90px 0;
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.about-us__title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+
+    z-index: 1;
+    color: #fff;
+}
+
+
+.about-us__container{
+
+    margin: 0 auto;
+    padding: 10px 20px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    text-align: center;
+    column-gap: 100px;
+}
+
+.about-us__description{
+    color: #3c3c3c;
+}
+
+.about-us__description h3{
+    margin-bottom: 15px;
+}
+
+.about-us__container p {
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+
+
+.container-img{
+    margin-bottom: 20px;
+    max-width: 500px;
+    height: auto;
+
+    border-radius: 20px;
+}
+
 @media screen and (max-width: 600px) {
     .cards{
         flex-direction: column;
@@ -334,6 +408,12 @@ main {
 
     .logo{
         align-self: flex-end;
+    }
+
+    .work-hours,
+    .contacts{
+        font-size: 12px;
+        margin-bottom: 15px;
     }
 }
 
