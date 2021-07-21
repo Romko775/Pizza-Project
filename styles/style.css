@@ -124,7 +124,7 @@ body {
 /* Hero */
 
 .hero{
-    background: url(../photos/wooden-board-empty-table-top-blurred-background.jpg) center / cover no-repeat ; 
+    background: url(../photos/wooden-board-empty-table-top-blurred-background\ \(1\).webp) center / cover no-repeat ; 
     height: 100vh;
     position: relative;
     text-align: center;
@@ -200,7 +200,7 @@ body {
     margin-top: 90px;
     height: 300px;
     width: 100%;
-    background: url(../photos/3007281.png) center / cover no-repeat;
+    background: url(../photos/3007281.webp) center / cover no-repeat;
 }
 
 .menu{
