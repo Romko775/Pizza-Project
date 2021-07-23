@@ -18,11 +18,8 @@ body {
     min-height: 100vh;
     margin: 0;
     line-height: 1.5;
-    background-color: #f2e9ce;
-
+    background-color: #f8f8f8;
 }
-
-
 
 
 
@@ -69,6 +66,7 @@ body {
     color: #fff;
     opacity: 0.85;
     transition: opacity 0.1s linear;
+    cursor: pointer;
 }
 
 .logo {
@@ -114,9 +112,9 @@ body {
 
 
 .header__scrolled {
-    padding: 10px 10px;
     background-color: #3c3c3c;
     transition: 1s;
+    height: 50px;
 }
 
 
@@ -209,8 +207,11 @@ body {
 
 .cards {
     margin: 20px 20px;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .main-title {
@@ -222,9 +223,9 @@ body {
 
 .card {
     text-align: center;
-    width: 350px;
+    /* max-width: 350px; */
     transition: box-shadow, 0.2s linear;
-    padding: 5px;
+    padding: 10px;
     background-color: #f0ecdf;
     border-radius: 10px;
 }
@@ -242,6 +243,7 @@ body {
     display: block;
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .card__title {

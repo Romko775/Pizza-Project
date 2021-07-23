@@ -28,9 +28,9 @@
         <header id="header" class="page-header">
             <a class="logo page-header__logo">Pizza club</a>
             <ul class="nav">
-                <li class="nav__item"><a href="#about-us" class="nav__link">Про нас</a></li>
-                <li class="nav__item"><a href="#contacts" class="nav__link">Контакти</a></li>
-                <li class="nav__item"><a href="tel: +380986041633"class="nav__link">Замовити піццу</a></li>
+                <li class="nav__item"><span id="about-us__btn" class="nav__link">Про нас</span></li>
+                <li class="nav__item"><span id="contacts__btn" class="nav__link">Контакти</span></li>
+                <li class="nav__item"><a href="tel: +380986041633" class="nav__link">Замовити піццу</a></li>
             </ul>
         </header>
     
@@ -372,18 +372,40 @@
 
    
     <script>
+        function listenForClick(btnId, callbackFN, callbackFNId) {
+            var el = document.getElementById(btnId);
+            if(el) {
+                el.addEventListener('click', function() {
+                    callbackFN(callbackFNId);
+                });
+            }  
+        }
 
-
-        window.addEventListener('scroll', function (event) {
-            if (window.scrollY > 200) {
-                document.getElementById('header').classList.add('header__scrolled');
-
+        function scrollToElement(elName) {
+            var el = document.getElementById(elName);
+            if (el) {
+                el.scrollIntoView({behavior: 'smooth'});
             }
+        }
 
-            else {
-                document.getElementById('header').classList.remove('header__scrolled');
-            }
+        document.addEventListener('DOMContentLoaded', function() {
+            window.addEventListener('scroll', function (event) {
+                if (window.scrollY > 200) {
+                    document.getElementById('header').classList.add('header__scrolled');
+                }
+
+                else {
+                    document.getElementById('header').classList.remove('header__scrolled');
+                }
+            });
+
+            console.log(document.getElementById('about-us__btn'));
+
+            listenForClick('about-us__btn', scrollToElement, 'about-us');
+            listenForClick('contacts__btn', scrollToElement, 'contacts');
         });
+
+        
     </script>
 </body>
 
